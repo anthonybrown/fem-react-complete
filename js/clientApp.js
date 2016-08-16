@@ -3,9 +3,22 @@
 var div = React.DOM.div
 var h1  = React.DOM.h1
 
+var MyTitle = React.createClass({
+	render () {
+		return (
+			div(null,
+				h1(null, 'Checkout this other title')
+			)
+		)
+	}
+})
+
 var MyFirstComponent = (
 	div(null,
-		h1(null, 'This is my first Component!')
+		React.createElement(MyTitle, null),
+		React.createElement(MyTitle, null),
+		React.createElement(MyTitle, null),
+		React.createElement(MyTitle, null)
 	)
 )
 
