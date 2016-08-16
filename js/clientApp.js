@@ -8,20 +8,21 @@ var MyTitle = React.createClass({
 	render () {
 		return (
 			div(null,
-				h1(null, 'Checkout this other title')
+				h1(null, this.props.title)
+				//h1(null, 'Checkout this other title')
 			)
 		)
 	}
 })
 
-var MyTitleFact = React.createFactory(MyTitle)
+var MyTitleFact = React.createFactory(MyTitle) // never have to use createFactory with JSX
 var ce = React.createElement
 
 var MyFirstComponent = (
 	div(null,
-		MyTitleFact(null),
-		React.createElement(MyTitle, null),
-		ce(MyTitle, null)
+		MyTitleFact({title: 'Props are great.'}),
+		React.createElement(MyTitle, {title: 'Use props everywhere.'}),
+		ce(MyTitle, {title: 'Props are the best.'})
 	)
 )
 
