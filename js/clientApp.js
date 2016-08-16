@@ -18,10 +18,10 @@ var ce = React.createElement
 
 var MyFirstComponent = (
 	div(null,
-		MyTitleFact({title: 'Props are great.', color: 'rebeccapurple'}),
-		MyTitleFact({title: 'Use props, they\'re great!.', color: 'darkorange'}),
-		React.createElement(MyTitle, {title: 'Use props everywhere.', color: 'steelblue'}),
-		ce(MyTitle, {title: 'Props are the best.', color: 'slategrey'})
+		MyTitleFact({title: 'Props are great.',                       color : 'rebeccapurple'}),
+		MyTitleFact({title: 'Use props, they\'re great!.',            color : 'darkorange'}),
+		React.createElement(MyTitle, {title: 'Use props everywhere.', color : 'steelblue'}),
+		ce(MyTitle, {title: 'Props are the best.',                    color : 'slategrey'})
 	)
 );
 
