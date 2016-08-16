@@ -2,7 +2,7 @@
 
 var div = React.DOM.div;
 var h1  = React.DOM.h1;
-// a composite component
+
 var MyTitle = React.createClass({
 	render () {
 		return (
